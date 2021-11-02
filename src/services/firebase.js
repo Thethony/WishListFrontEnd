@@ -13,7 +13,7 @@ const firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
 
   const auth = firebase.auth();
-  const provider = new firebase.auth.GithubAuthProvider
+  const provider = new firebase.auth.GoogleAuthProvider()
 
   function signIn() {
       return auth.signInWithPopup(provider);
