@@ -7,8 +7,8 @@ import './App.css';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
-// import Show from './pages/Show';
-// import { auth } from './services/firebase';
+import Show from './pages/Show';
+import { auth } from './services/firebase';
 
 
 

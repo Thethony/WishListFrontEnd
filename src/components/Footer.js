@@ -1,7 +1,7 @@
 const Footer = (props) => {
     return (
         <Footer>
-            <h1>Footer</h1>
+            <p>Copyright &copy; All Rights Reserved Your Wish List</p>
         </Footer>
     )
 }
