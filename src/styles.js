@@ -41,7 +41,4 @@ export const StyledMain = styled.main`
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-
-
-    
 `
