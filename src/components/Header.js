@@ -8,9 +8,10 @@ const Header = (props) => {
             <nav>
                 <ul>
                     <li>
-                        <Link>Login</Link>
+                        <Link to="/login">Login</Link>
                     </li>
                     <li onClick={logOut}>Logout</li>
+                    <li><Link to="/dashboard">Dashboard</Link></li>
                 </ul>
             </nav>
         </StyledHeader>

@@ -1,5 +1,4 @@
-// import {useState, useEffect, UseRef } from 'react'
-import { Switch, Route,} from 'react-router-dom'
+import { Switch, Route} from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import './App.css';
@@ -7,12 +6,16 @@ import './App.css';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
-import Show from './pages/Show';
+import { useState } from 'react';
 import { auth } from './services/firebase';
+// import Show from './pages/Show';
+
 
 
 
 function App() {
+  const [ user, setUser ] = useState(null);
+  auth.onAuthStateChanged(user => console.log('user is : ' , user))
   return (
     <>
     <Header />

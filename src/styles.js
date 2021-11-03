@@ -31,3 +31,17 @@ export const StyledHeader = styled.header`
     }
 
 `;
+export const StyledFooter = styled.footer`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+export const StyledMain = styled.main`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+
+    
+`
