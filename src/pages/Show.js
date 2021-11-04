@@ -20,7 +20,7 @@ const Show = (props) => {
     }
 
     const removeWish = () => {
-        props.deleteWish(wish._id);
+        props.deleteWish(wishList._id);
         props.history.push('/');
     }
     return (

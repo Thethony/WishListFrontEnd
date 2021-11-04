@@ -39,7 +39,7 @@ const Main = (props) => {
 
     const deleteWish = async id => {
         await fetch(BASE_URL + id, { method: 'DELETE'})
-        getWish()
+        getWish();
     }
 
     useEffect(() => getWish(), [])
