@@ -9,7 +9,7 @@ const Home = (props) => {
                 <Link to={`/wish/${wishList._id}`}>
                     <h1>{wishList.product}</h1>
                 </Link>
-                <img style={{height: 150, width: 100,}} src={wishList.image} alt={wishList.product} />
+                <img style={{height: 150, width: 150}} src={wishList.image} alt={wishList.product} />
                 <h3>{wishList.price}</h3>
             </div>
         ))
@@ -21,7 +21,7 @@ const handleChange = (event) => {
 
     setNewForm(prevState => ({
                 ...prevState,
-                [event.target.product]: event.target.value 
+                [event.target.name]: event.target.value 
     }))
 }
 
@@ -62,7 +62,7 @@ function getNewState() {
                     placeholder="Product Price"
                     name="price"
                 />
-                <input type="submit" value="Create Person" />
+                <input type="submit" value="Create Product" />
             </form>
             { props.wish ? loaded() : loading() }
         </section>

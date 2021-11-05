@@ -9,6 +9,7 @@ export const StyledHeader = styled.header`
     background-color: green;
     color: white;
     box-shadow: 1px 1px 3px 2px #808080;
+    text-decoration: none;
     nav {
         display: flex;
         align-items: center;

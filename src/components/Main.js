@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Route, Switch, Redirect, Link } from 'react-router-dom'
 import Home from '../pages/Home'
 import Show from '../pages/Show'
-
+import { StyledMain }from '../styles.js';
 const Main = (props) => {
     const [ wish, setWish ] = useState([]);
 
@@ -46,6 +46,7 @@ const Main = (props) => {
 
     return (
     <main>
+        <StyledMain>
         <Switch>
             <Route exact path="/">
                 <Home wish={wish} createWish={createWish} />
@@ -68,6 +69,7 @@ const Main = (props) => {
                     </div>
                 </Route>
         </Switch>
+        </StyledMain>
     </main>
     )
 }
